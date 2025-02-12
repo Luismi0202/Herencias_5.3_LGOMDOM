@@ -1,7 +1,7 @@
 
 fun main(){
     val azulito = Coche("Toyota",50.0)
-    azulito.encenderMotor()
+    azulito.encender()
     azulito.acelerar(20.0)
     azulito.frenar(10.0)
     azulito.mostrarInformacion()

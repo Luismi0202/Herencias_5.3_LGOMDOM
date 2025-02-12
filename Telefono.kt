@@ -19,7 +19,7 @@ class Telefono(
     }
     override fun encender() {
         println("Android")
-        Thread.sleep(250)
+        Thread.sleep(750)
         var continuar = true
 
         do {
@@ -46,11 +46,13 @@ class Telefono(
 
     override fun apagar() {
         println("Apagando...")
+        Thread.sleep(500)
         repeat(50) { println(" ") }
     }
 
     override fun reiniciar() {
         println("Reiniciando...")
+        Thread.sleep(700)
         repeat(50) { println(" ") }
         encender()
     }

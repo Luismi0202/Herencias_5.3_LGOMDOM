@@ -3,7 +3,15 @@ class Coche(
     override var kmHora: Double,
     override var motorEncendido: Boolean = false
 ):Vehiculo,EncendidoApagado{
-
+    /* override var KmHora = 0.0
+      set(value){
+      val valorFinal = field- value
+      field = if(valorFinal < 0) {
+      0.0
+      }else{
+      valorFinal
+      }
+     */
     override fun acelerar(kilometros: Double) {
         if(motorEncendido){
             kmHora += kilometros
